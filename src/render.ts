@@ -304,15 +304,12 @@ function initGraph(graphData: any) {
 // Window listeners.
 /* ************************************************************************** */
 
-// window.addEventListener("load", () => {
-// 	window.top.postMessage()
-
-// 	// TODO: Fetch from IIntra.
-// 	initGraph({
-// 		ranks: ["done", "done", "in_progress", "unavailable"],
-// 		projects: APIData
-// 	});
-// });
+window.addEventListener("load", () => {
+	initGraph({
+		ranks: ["done", "done", "in_progress", "unavailable"],
+		projects: [] 
+	});
+});
 
 window.addEventListener("resize", () => {
 	// TODO: Leave in as option ?

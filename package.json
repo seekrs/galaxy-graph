@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	"build": "./node_modules/typescript/bin/tsc",
-	"build-windows": ".\\node_modules\\.bin\\tsc.cmd"
+	"build-windows": ".\\node_modules\\.bin\\tsc.cmd",
+	"run": "firefox $(pwd)/www/index.html"
   },
   "repository": {
     "type": "git",

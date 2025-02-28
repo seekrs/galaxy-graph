@@ -55,8 +55,8 @@ class Canvas2D {
 		this.canvas.height = height * this.canvasScale;
 
 		// Start in the middle
-		this.transformedPos = new DOMPoint(this.canvas.width / 2, this.canvas.height / 2);
-		this.ctx.translate(this.transformedPos.x, this.transformedPos.y);
+		this.transformedPos = new DOMPoint(0, 0);
+		this.ctx.translate(this.canvas.width / 2, this.canvas.height / 2);
 	
 		//= Mouse events =//
 
